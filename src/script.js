@@ -7,8 +7,8 @@ const randomDamage = () => {
 } 
 
 const chooseOption = (opt1, opt2) => {
-    let randNum = Math.floor(Math.random ());
-    return randNum = randNum === 0 ? opt1 : opt2;
+    let randNum = Math.round(Math.random ());
+    return randNum == 0 ? opt1 : opt2;
 }
 
 const attackPlayer = function(health) {
@@ -50,4 +50,4 @@ function fight(player1, player2, player1Health, player2Health) {
     }
 }
 
-console.log(fight("Stephanie", "Thomas", 100, 100));
+fight("Stephanie", "Thomas", 100, 100);
